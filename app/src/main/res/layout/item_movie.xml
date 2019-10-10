@@ -39,6 +39,34 @@
         android:layout_below="@+id/txt_name"
         android:textSize="15sp"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Crew_detail"
+        android:layout_below="@+id/txt_tgl"
+        android:visibility="invisible"
+        android:layout_marginStart="26dp"
+        android:id="@+id/crew_detail"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="26dp"
+        android:layout_toEndOf="@+id/gambarMovie"
+        android:layout_toRightOf="@+id/gambarMovie"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Position_detail"
+        android:layout_below="@+id/crew_detail"
+        android:layout_marginStart="26dp"
+        android:id="@+id/position_detail"
+        android:layout_marginLeft="26dp"
+        android:visibility="invisible"
+        android:layout_toEndOf="@+id/gambarMovie"
+        android:layout_toRightOf="@+id/gambarMovie"
+        />
 
     <TextView
         android:layout_width="wrap_content"

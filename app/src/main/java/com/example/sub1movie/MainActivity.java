@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
         dataNameMovie=getResources().getStringArray(R.array.data_name_movie);
         dataTglMovie=getResources().getStringArray(R.array.data_tgl_movie);
         imgMovie = getResources().obtainTypedArray(R.array.data_picture);
+        dataCrew = getResources().getStringArray(R.array.data_name_crew);
+        dataCrewDetail = getResources().getStringArray(R.array.detail_position);
         dataDescMovie = getResources().getStringArray(R.array.data_description_detail);
 
 
@@ -61,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
             movie.setNamaMovie(dataNameMovie[i]);
             movie.setTglMovie(dataTglMovie[i]);
             movie.setDescMovie(dataDescMovie[i]);
+            movie.setCrewMovie(dataCrew[i]);
+            movie.setCrewDetailMovie(dataCrewDetail[i]);
+
             movie.setPicture(imgMovie.getResourceId(i,-1));
             movies.add(movie);
         }

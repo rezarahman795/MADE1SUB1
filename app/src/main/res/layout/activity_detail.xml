@@ -71,7 +71,7 @@
             android:id="@+id/crew_detail"
             android:textStyle="bold"
             android:textSize="15sp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginLeft="26dp"
             android:layout_toEndOf="@+id/gambarMovie"
             android:layout_toRightOf="@+id/gambarMovie"
@@ -100,14 +100,15 @@
             android:id="@+id/tv_detail"
             />
 
-        <TextView
+        <me.biubiubiu.justifytext.library.JustifyTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txt_desc"
             android:layout_below="@+id/tv_detail"
             android:text="@string/desc_movie"
             android:layout_marginTop="10dp"
-            android:textSize="15sp"
+            android:textSize="18sp"
+
             />
 
 

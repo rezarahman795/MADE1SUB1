@@ -61,7 +61,7 @@ public class MovieAdapter extends BaseAdapter {
     }
 
     private class ViewHolder {
-        private TextView txtNameMovies,txtTglMovies,txtDescMovie;
+        private TextView txtNameMovies,txtTglMovies,txtDescMovie,txtCrewMovie,txtCrewDetail;
         private ImageView pictMovies;
 
         ViewHolder(View view){
@@ -69,6 +69,8 @@ public class MovieAdapter extends BaseAdapter {
             txtTglMovies = view.findViewById(R.id.txt_tgl);
             txtDescMovie = view.findViewById(R.id.txt_desc);
             pictMovies =view.findViewById(R.id.gambarMovie);
+            txtCrewMovie = view.findViewById(R.id.crew_detail);
+            txtCrewDetail = view.findViewById(R.id.position_detail);
 
         }
         public void bind(Movie movies) {
@@ -77,6 +79,10 @@ public class MovieAdapter extends BaseAdapter {
             txtTglMovies.setText(movies.getTglMovie());
             txtDescMovie.setText(movies.getDescMovie());
             pictMovies.setImageResource(movies.getPicture());
+            txtCrewMovie.setText(movies.getCrewMovie());
+            txtCrewDetail.setText(movies.getCrewDetailMovie());
+
+
         }
 
     }
