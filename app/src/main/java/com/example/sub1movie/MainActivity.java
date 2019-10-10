@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
     private MovieAdapter movieAdapter;
     private String[]dataNameMovie,dataTglMovie,dataDescMovie,dataCrew,dataCrewDetail,dataDescDetail;
     private TypedArray imgMovie;
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent changeActivity = new Intent(MainActivity.this,DetailActivity.class);
                 changeActivity.putExtra("EXTRA_MOVIE",movies.get(position));
+                startActivity(changeActivity);
             }
         });
 
@@ -44,17 +45,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         addItem();
 
     }
-
-
-
     private void init() {
         dataNameMovie=getResources().getStringArray(R.array.data_name_movie);
         dataTglMovie=getResources().getStringArray(R.array.data_tgl_movie);
-        dataDescMovie=getResources().getStringArray(R.array.data_description);
         imgMovie = getResources().obtainTypedArray(R.array.data_picture);
-        dataCrew = getResources().getStringArray(R.array.data_name_crew);
-        dataCrewDetail = getResources().getStringArray(R.array.detail_position);
-        dataDescDetail = getResources().getStringArray(R.array.data_description_detail);
+        dataDescMovie = getResources().getStringArray(R.array.data_description_detail);
 
 
     }
@@ -66,9 +61,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             movie.setNamaMovie(dataNameMovie[i]);
             movie.setTglMovie(dataTglMovie[i]);
             movie.setDescMovie(dataDescMovie[i]);
-            movie.setCrewMovie(dataCrew[i]);
-            movie.setCrewDetailMovie(dataCrewDetail[i]);
-            movie.setDescMovieDetail(dataDescDetail[i]);
             movie.setPicture(imgMovie.getResourceId(i,-1));
             movies.add(movie);
         }
@@ -76,11 +68,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         movieAdapter.setMovies(movies);
     }
 
-    @Override
-    public void onClick(View v) {
-        if (v.getId() == R.id.list_movie){
-            Intent moveIntent = new Intent(MainActivity.this,DetailActivity.class);
-            startActivity(moveIntent);
-        }
-    }
 }

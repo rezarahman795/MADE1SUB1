@@ -23,7 +23,7 @@
         android:text="@string/movie_name"
         android:layout_toEndOf="@+id/gambarMovie"
         android:layout_toRightOf="@+id/gambarMovie"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         />
 
@@ -37,7 +37,7 @@
         android:layout_toEndOf="@+id/gambarMovie"
         android:layout_toRightOf="@+id/gambarMovie"
         android:layout_below="@+id/txt_name"
-        android:textSize="10sp"
+        android:textSize="15sp"
         />
 
     <TextView
@@ -52,6 +52,8 @@
         android:layout_toRightOf="@+id/gambarMovie"
         android:layout_below="@+id/txt_tgl"
         android:textSize="15sp"
+        android:ellipsize="end"
+        android:maxLines="6"
         />
 
 </RelativeLayout>

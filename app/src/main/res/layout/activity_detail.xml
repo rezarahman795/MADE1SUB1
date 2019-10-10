@@ -18,46 +18,46 @@
         <ImageView
             android:layout_width="150dp"
             android:layout_height="200dp"
-            android:id="@+id/pict_detail"
+            android:id="@+id/gambarMovie"
             android:scaleType="fitXY"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/txt_name_detail"
+            android:id="@+id/txt_name"
             android:layout_marginStart="26dp"
             android:layout_marginLeft="26dp"
             android:text="@string/movie_name"
-            android:layout_toEndOf="@+id/pict_detail"
-            android:layout_toRightOf="@+id/pict_detail"
-            android:textSize="18sp"
+            android:layout_toEndOf="@+id/gambarMovie"
+            android:layout_toRightOf="@+id/gambarMovie"
+            android:textSize="20sp"
             android:textStyle="bold"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/txt_tgl_Detail"
+            android:id="@+id/txt_tgl"
             android:layout_marginStart="26dp"
             android:layout_marginLeft="26dp"
             android:text="@string/tgl_movie"
-            android:layout_toEndOf="@+id/pict_detail"
-            android:layout_toRightOf="@+id/pict_detail"
-            android:layout_below="@+id/txt_name_detail"
-            android:textSize="10sp"
+            android:layout_toEndOf="@+id/gambarMovie"
+            android:layout_toRightOf="@+id/gambarMovie"
+            android:layout_below="@+id/txt_name"
+            android:textSize="18sp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_tgl_Detail"
+            android:layout_below="@+id/txt_tgl"
             android:text="@string/Crew"
             android:layout_marginStart="26dp"
             android:id="@+id/tv_crew"
             android:textSize="17sp"
             android:layout_marginLeft="26dp"
-            android:layout_toEndOf="@+id/pict_detail"
-            android:layout_toRightOf="@+id/pict_detail"
+            android:layout_toEndOf="@+id/gambarMovie"
+            android:layout_toRightOf="@+id/gambarMovie"
             android:layout_marginTop="20dp"
             android:textStyle="bold"
             />
@@ -68,25 +68,25 @@
             android:text="@string/Crew_detail"
             android:layout_below="@+id/tv_crew"
             android:layout_marginStart="26dp"
-            android:id="@+id/crew_movie"
+            android:id="@+id/crew_detail"
             android:textStyle="bold"
-            android:textSize="14sp"
+            android:textSize="15sp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="26dp"
-            android:layout_toEndOf="@+id/pict_detail"
-            android:layout_toRightOf="@+id/pict_detail"
+            android:layout_toEndOf="@+id/gambarMovie"
+            android:layout_toRightOf="@+id/gambarMovie"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Position_detail"
-            android:layout_below="@+id/crew_movie"
+            android:layout_below="@+id/crew_detail"
             android:layout_marginStart="26dp"
-            android:id="@+id/position_detail_crew"
+            android:id="@+id/position_detail"
             android:layout_marginLeft="26dp"
-            android:layout_toEndOf="@+id/pict_detail"
-            android:layout_toRightOf="@+id/pict_detail"
+            android:layout_toEndOf="@+id/gambarMovie"
+            android:layout_toRightOf="@+id/gambarMovie"
             />
 
         <TextView
@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:text="@string/Description"
             android:layout_marginTop="25dp"
-            android:layout_below="@+id/pict_detail"
+            android:layout_below="@+id/gambarMovie"
             android:textStyle="bold"
             android:textSize="20sp"
             android:id="@+id/tv_detail"
@@ -103,11 +103,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txt_desc_detail"
+            android:id="@+id/txt_desc"
             android:layout_below="@+id/tv_detail"
             android:text="@string/desc_movie"
             android:layout_marginTop="10dp"
-            android:textSize="12sp"
+            android:textSize="15sp"
             />
 
 

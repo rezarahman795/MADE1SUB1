@@ -61,31 +61,22 @@ public class MovieAdapter extends BaseAdapter {
     }
 
     private class ViewHolder {
-        private TextView txtNameMovies,txtTglMovies,txtDescMovie,txtCrewMovie,txtCrewDetail,
-                txtDescMovieDetail,txtNameMoviesDetail,txtTglMoviesDetail;
+        private TextView txtNameMovies,txtTglMovies,txtDescMovie;
         private ImageView pictMovies;
 
         ViewHolder(View view){
             txtNameMovies = view.findViewById(R.id.txt_name);
             txtTglMovies = view.findViewById(R.id.txt_tgl);
-            txtNameMoviesDetail = view.findViewById(R.id.txt_name_detail);
-            txtTglMoviesDetail = view.findViewById(R.id.txt_tgl_Detail);
             txtDescMovie = view.findViewById(R.id.txt_desc);
-            pictMovies = view.findViewById(R.id.gambarMovie);
-            txtCrewMovie = view.findViewById(R.id.crew_movie);
-            txtCrewDetail = view.findViewById(R.id.position_detail_crew);
-            txtDescMovieDetail = view.findViewById(R.id.txt_desc_detail);
+            pictMovies =view.findViewById(R.id.gambarMovie);
+
         }
         public void bind(Movie movies) {
+
             txtNameMovies.setText(movies.getNamaMovie());
             txtTglMovies.setText(movies.getTglMovie());
             txtDescMovie.setText(movies.getDescMovie());
             pictMovies.setImageResource(movies.getPicture());
-            txtCrewMovie.setText(movies.getCrewMovie());
-            txtNameMoviesDetail.setText(movies.getNamaMovieDetail());
-            txtTglMoviesDetail.setText(movies.getTglMovieDetail());
-            txtCrewDetail.setText(movies.getCrewDetailMovie());
-            txtDescMovieDetail.setText(movies.getDescMovie());
         }
 
     }
