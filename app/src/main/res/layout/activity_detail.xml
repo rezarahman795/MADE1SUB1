@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:id="@+id/pict_detail"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_name_detail"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:text="@string/movie_name"
+            android:layout_toEndOf="@+id/pict_detail"
+            android:layout_toRightOf="@+id/pict_detail"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_tgl_Detail"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:text="@string/tgl_movie"
+            android:layout_toEndOf="@+id/pict_detail"
+            android:layout_toRightOf="@+id/pict_detail"
+            android:layout_below="@+id/txt_name_detail"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_tgl_Detail"
+            android:text="@string/Crew"
+            android:layout_marginStart="26dp"
+            android:id="@+id/tv_crew"
+            android:textSize="17sp"
+            android:layout_marginLeft="26dp"
+            android:layout_toEndOf="@+id/pict_detail"
+            android:layout_toRightOf="@+id/pict_detail"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Crew_detail"
+            android:layout_below="@+id/tv_crew"
+            android:layout_marginStart="26dp"
+            android:id="@+id/crew_movie"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="26dp"
+            android:layout_toEndOf="@+id/pict_detail"
+            android:layout_toRightOf="@+id/pict_detail"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Position_detail"
+            android:layout_below="@+id/crew_movie"
+            android:layout_marginStart="26dp"
+            android:id="@+id/position_detail_crew"
+            android:layout_marginLeft="26dp"
+            android:layout_toEndOf="@+id/pict_detail"
+            android:layout_toRightOf="@+id/pict_detail"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Description"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/pict_detail"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/tv_detail"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_desc_detail"
+            android:layout_below="@+id/tv_detail"
+            android:text="@string/desc_movie"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            />
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
